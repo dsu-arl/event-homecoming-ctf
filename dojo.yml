@@ -1,0 +1,6 @@
+id: dsu-homecoming
+name: DSU Homecoming
+modules:
+- id: misc
+  name: misc
+type: roadshow
