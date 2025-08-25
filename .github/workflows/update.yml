@@ -1,0 +1,16 @@
+name: Update Dojo
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: pwncollege/dojo-update@v1
+        with:
+          site: https://pwncollege.arl.madren.org/
+          dojo: 
+          update_code: ${{ secrets.UPDATE_CODE }}
