@@ -3,4 +3,6 @@ name: DSU Homecoming
 modules:
 - id: misc
   name: misc
+- id: pwn
+  name: pwn
 type: event
