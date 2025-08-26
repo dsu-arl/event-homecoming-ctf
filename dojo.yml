@@ -3,4 +3,4 @@ name: DSU Homecoming
 modules:
 - id: misc
   name: misc
-type: roadshow
+type: event
