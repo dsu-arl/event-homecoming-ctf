@@ -1,6 +1,7 @@
 id: dsu-homecoming
 name: DSU Homecoming CTF
-emoji: 💻
+award:
+  emoji: 💻
 modules:
 - id: misc
   name: misc
