@@ -1,6 +1,7 @@
 #!/usr/bin/exec-suid -- /usr/bin/python3.12 -I
 import re
 import sys
+from ans import *
 
 def prGreen(s): print("\033[92m {}\033[00m".format(s))
 def prRed(s): print("\033[91m {}\033[00m".format(s))
@@ -14,12 +15,12 @@ def print_flag():
 
 def main():
     uni = input("What institution kidnapped General Cyber? ").lower()
-    if uni not in ['dwu', 'dakota wesleyan university', 'dakota wesleyan']:
+    if uni not in UNI_ANS:
         prRed("That is not correct. Make sure to check your spelling.")
         sys.exit(0)
 
     building = input("What building is General Cyber in? ").lower()
-    if building not in ['smith', 'smith hall']:
+    if building not in BUILDING_ANS:
         prRed("That is not correct. Make sure to check your spelling.")
         sys.exit(0)
 
