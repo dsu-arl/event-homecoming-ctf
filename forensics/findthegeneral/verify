@@ -1,0 +1,32 @@
+#!/opt/pwn.college/python
+import re
+import sys
+
+def prGreen(s): print("\033[92m {}\033[00m".format(s))
+def prRed(s): print("\033[91m {}\033[00m".format(s))
+
+def print_flag():
+    try:
+        with open("/flag", "r") as f:
+            print(f.read())
+    except FileNotFoundError:
+        print("Error: Flag file not found.")
+
+def main():
+    uni = input("What institution kidnapped General Cyber? ").lower()
+    if uni not in ['dwu', 'dakota wesleyan university', 'dakota wesleyan']:
+        prRed("That is not correct. Make sure to check your spelling.")
+        sys.exit(0)
+
+    building = input("What building is General Cyber in? ").lower()
+    if building not in ['smith', 'smith hall']:
+        prRed("That is not correct. Make sure to check your spelling.")
+        sys.exit(0)
+
+    prGreen("That's correct! Congratulations!")
+    print_flag()
+
+
+if __name__ == "__main__":
+
+    main()

@@ -1,0 +1,5 @@
+name: forensics
+challenges:
+    - id: findthegeneral
+      name: Find the General
+      image: copsahl/forensics
