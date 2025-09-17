@@ -2,6 +2,8 @@
 
 chmod 0700 /challenge/ans.py
 chmod 0700 /challenge/.init
+chmod 0766 /challenge/propoganda.jpg
+
 /usr/bin/python3.12 /challenge/ans.py
 exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" /challenge/propoganda.jpg
 # don't ask why i have to do these next two commands
