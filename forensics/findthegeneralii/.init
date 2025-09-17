@@ -5,7 +5,7 @@ chmod 0700 /challenge/.init
 chown hacker:hacker /challenge/propoganda.jpg
 chown hacker:hacker /challenge/secret_plan.txt
 
-/challenge/ans.py
+python /challenge/ans.py
 sudo -u hacker steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -p Iluvkittens42!
 
 #rm /challenge/secret_plan.txt
