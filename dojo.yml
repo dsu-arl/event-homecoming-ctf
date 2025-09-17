@@ -7,4 +7,6 @@ modules:
   name: misc
 - id: pwn
   name: pwn
+- id: forensics
+  name: forensics
 type: event
