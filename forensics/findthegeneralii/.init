@@ -3,8 +3,8 @@
 chmod 0700 /challenge/ans.py
 chmod 0700 /challenge/.init
 /usr/bin/python3.12 /challenge/ans.py
-exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" /challenge/propoganda.jpg
-
+#exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" /challenge/propoganda.jpg
+#rm /challenge/propoganda.jpg_original
 steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -p Iluvkittens42!
 
 rm /challenge/secret_plan.txt
