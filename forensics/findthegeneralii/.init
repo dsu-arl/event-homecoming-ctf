@@ -2,14 +2,14 @@
 
 chmod 0700 /challenge/ans.py
 chmod 0700 /challenge/.init
-chmod 0766 /challenge/secret_plan.txt
 chown hacker:hacker /challenge/propoganda.jpg
+chown hacker:hacker /challenge/secret_plan.txt
 
 /usr/bin/python3.12 /challenge/ans.py
 #exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" /challenge/propoganda.jpg
 # don't ask why i have to do these next two commands
 #rm /challenge/propoganda.jpg
 #mv /challenge/propoganda.jpg_original /challenge/propoganda.jpg
-steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -p Iluvkittens42!
+sudo -u hacker steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -p Iluvkittens42!
 
 rm /challenge/secret_plan.txt
