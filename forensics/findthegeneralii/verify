@@ -1,6 +1,6 @@
 #!/usr/bin/exec-suid -- /usr/bin/python3.12 -I
 import sys
-from ans import *
+from .ans import *
 
 def prGreen(s): print("\033[92m {}\033[00m".format(s))
 def prRed(s): print("\033[91m {}\033[00m".format(s))
@@ -23,5 +23,4 @@ def main():
 
 
 if __name__ == "__main__":
-
     main()
