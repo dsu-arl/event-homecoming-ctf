@@ -15,6 +15,7 @@ def main():
     with open('/challenge/ans.txt', 'r') as fObj:
         ANS = [x.strip() for x in fObj.readlines()]
 
+    prGreen("Write the answer in full as it appeared in the file.")
     usr = input("What is going to be purchased in step 3 of the criminals secret plan? ").lower()
     if usr not in ANS:
         prRed("That is not correct. Make sure to check your spelling.")
