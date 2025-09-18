@@ -2,7 +2,6 @@
 
 chmod 0700 /challenge/ans.txt
 chmod 0700 /challenge/.init
-chown hacker:hacker /challenge/propoganda.jpg
 chown hacker:hacker /challenge/secret_plan.txt
 
 # add lines to secret
@@ -14,7 +13,9 @@ LINE2="Step 4. Do laundry"
 echo $LINE >> /challenge/secret_plan.txt
 echo $LINE2 >> /challenge/secret_plan.txt
 
-exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" -overwrite_original /challenge/propoganda.jpg
+exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" -overwrite_original_in_place /challenge/propoganda.jpg -o /challenge/propoganda.jpg
 steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -p Iluvkittens42!
+
+chown hacker:hacker /challenge/propoganda.jpg
 
 rm /challenge/secret_plan.txt
