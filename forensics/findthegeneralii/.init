@@ -1,11 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
 chmod 0700 /challenge/ans.py
 chmod 0700 /challenge/.init
 chown hacker:hacker /challenge/propoganda.jpg
 chown hacker:hacker /challenge/secret_plan.txt
 
-/challenge/ans.py
+# add lines to secret
+RANDOM=$$$(date +%s)
+ITEMS=("a pet shark" "mrbeast's youtube channel" "a first edition holographic charizard")
+CI=${ITEMS[ $RANDOM % ${#ITEMS[@]} ]}
+LINE="Step3. Use dollerz to buy $(CI)"
+LINE2="Step 4. Do laundry"
+
+echo $(LINE) >> /challenge/secret_plan.txt
+echo $(LINE2) >> /challenge/secret_plan.txt
+
 sudo -u hacker steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -p Iluvkittens42!
 
-rm /challenge/secret_plan.txt
+#rm /challenge/secret_plan.txt
