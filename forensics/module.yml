@@ -3,3 +3,6 @@ challenges:
     - id: findthegeneral
       name: Find the General
       image: copsahl/forensics
+    - id: findthegeneralii
+      name: Find the General II
+      image: copsahl/forensics
