@@ -4,4 +4,5 @@ You were able to find where General Cyber was hidden! However, when the police a
 
 On it, they found yet another picture that seemed suspicious! It was a JPEG with a message against general cyber, but is there something deeper hidden in it?
 
+*Hint: When extracting some data, extract it to /home/hacker*
 Run `/challenge/verify` to get the flag. 

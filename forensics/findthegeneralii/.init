@@ -17,5 +17,6 @@ exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" -overwrite_original_in_place /chall
 steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -sf /challenge/dsu_propoganda.jpg -p Iluvkittens42!
 exiftool -tagsFromFile /challenge/propoganda.jpg -all:all /challenge/dsu_propoganda.jpg
 
+rm /challenge/dsu_propoganda.jpg_original
 rm /challenge/propoganda.jpg
 rm /challenge/secret_plan.txt

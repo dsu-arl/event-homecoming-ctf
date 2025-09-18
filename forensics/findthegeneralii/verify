@@ -13,7 +13,8 @@ def print_flag():
 
 def main():
     with open('/challenge/ans.txt', 'r') as fObj:
-        ANS = fObj.readlines()
+        ANS = [x.strip() for x in fObj.readlines()]
+
     usr = input("What is going to be purchased in step 3 of the criminals secret plan? ").lower()
     if usr not in ANS:
         prRed("That is not correct. Make sure to check your spelling.")
