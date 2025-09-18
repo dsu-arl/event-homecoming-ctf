@@ -1,0 +1,22 @@
+#!/bin/bash
+
+chmod 0700 /challenge/ans.txt
+chmod 0700 /challenge/.init
+chown hacker:hacker /challenge/secret_plan.txt
+
+# add lines to secret
+RANDOM=$$$(date +%s)
+ci=$(/usr/bin/python3 -c "import random; print(random.choice(['a pet shark', 'mrbeast\'s youtube channel', 'a first edition holographic charizard']))")
+LINE="Step 3. Use dollerz to buy $ci"
+LINE2="Step 4. Do laundry"
+
+echo $LINE >> /challenge/secret_plan.txt
+echo $LINE2 >> /challenge/secret_plan.txt
+
+exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" -overwrite_original_in_place /challenge/propoganda.jpg -o /challenge/dsu_propoganda.jpg
+steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -sf /challenge/dsu_propoganda.jpg -p Iluvkittens42!
+exiftool -tagsFromFile /challenge/propoganda.jpg -all:all /challenge/dsu_propoganda.jpg
+
+rm /challenge/dsu_propoganda.jpg_original
+rm /challenge/propoganda.jpg
+rm /challenge/secret_plan.txt
