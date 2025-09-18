@@ -18,5 +18,4 @@ steghide embed -ef /challenge/secret_plan.txt -cf /challenge/dsu_propoganda.jpg 
 
 chown hacker:hacker /challenge/dsu_propoganda.jpg
 
-rm /challenge/propoganda.jpg
 rm /challenge/secret_plan.txt
