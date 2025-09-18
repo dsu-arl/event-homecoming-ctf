@@ -1,6 +1,5 @@
 #!/usr/bin/exec-suid -- /usr/bin/python3.12 -I
 import sys
-from .ans import *
 
 def prGreen(s): print("\033[92m {}\033[00m".format(s))
 def prRed(s): print("\033[91m {}\033[00m".format(s))
@@ -13,6 +12,8 @@ def print_flag():
         print("Error: Flag file not found.")
 
 def main():
+    with open('./ans.txt', 'r') as fObj:
+        ANS = fObj.readlines()
     usr = input("What is going to be purchased in step 3 of the criminals secret plan? ").lower()
     if usr not in ANS:
         prRed("That is not correct. Make sure to check your spelling.")
