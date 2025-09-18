@@ -13,9 +13,10 @@ LINE2="Step 4. Do laundry"
 echo $LINE >> /challenge/secret_plan.txt
 echo $LINE2 >> /challenge/secret_plan.txt
 
-exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" /challenge/propoganda.jpg -o /challenge/plz.jpg
-steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -p Iluvkittens42!
+exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" /challenge/propoganda.jpg -o /challenge/dsu_propoganda.jpg
+steghide embed -ef /challenge/secret_plan.txt -cf /challenge/dsu_propoganda.jpg -p Iluvkittens42!
 
-chown hacker:hacker /challenge/propoganda.jpg
+chown hacker:hacker /challenge/dsu_propoganda.jpg
 
+rm /challenge/propoganda.jpg
 rm /challenge/secret_plan.txt
