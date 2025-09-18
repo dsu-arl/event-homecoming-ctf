@@ -14,6 +14,8 @@ echo $LINE >> /challenge/secret_plan.txt
 echo $LINE2 >> /challenge/secret_plan.txt
 
 exiftool -CameraModel="SWx1dmtpdHRlbnM0MiEK" -overwrite_original_in_place /challenge/propoganda.jpg -o /challenge/dsu_propoganda.jpg
-#steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -p Iluvkittens42!
+steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -sf /challenge/dsu_propoganda.jpg -p Iluvkittens42!
+exiftool -tagsFromFile /challenge/propoganda.jpg -all:all /challenge/dsu_propoganda.jpg
 
+rm /challenge/propoganda.jpg
 rm /challenge/secret_plan.txt
