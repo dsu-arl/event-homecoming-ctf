@@ -12,7 +12,7 @@ def print_flag():
         print("Error: Flag file not found.")
 
 def main():
-    with open('./ans.txt', 'r') as fObj:
+    with open('/challenge/ans.txt', 'r') as fObj:
         ANS = fObj.readlines()
     usr = input("What is going to be purchased in step 3 of the criminals secret plan? ").lower()
     if usr not in ANS:
