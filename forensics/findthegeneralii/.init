@@ -7,9 +7,8 @@ chown hacker:hacker /challenge/secret_plan.txt
 
 # add lines to secret
 RANDOM=$$$(date +%s)
-ITEMS=("a pet shark" "mrbeast's youtube channel" "a first edition holographic charizard")
-CI=${ITEMS[ $RANDOM % ${#ITEMS[@]} ]}
-LINE="Step3. Use dollerz to buy $(CI)"
+ci=$(/usr/bin/python3 -c "import random; print(random.choice(['a pet shark', 'mrbeast\'s youtube channel', 'a first edition holographic charizard']))")
+LINE="Step3. Use dollerz to buy $ci"
 LINE2="Step 4. Do laundry"
 
 echo $(LINE) >> /challenge/secret_plan.txt
