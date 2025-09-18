@@ -22,7 +22,7 @@ def main():
 
     building = input("What building is General Cyber in? ").lower()
     with open('/challenge/.build.txt', 'r') as fObj:
-        BUILDING_ANS = [x for x in fObj.readlines()]
+        BUILDING_ANS = [x.strip() for x in fObj.readlines()]
     if building not in BUILDING_ANS:
         prRed("That is not correct. Make sure to check your spelling.")
         sys.exit(0)
