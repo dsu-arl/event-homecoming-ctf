@@ -8,12 +8,12 @@ chown hacker:hacker /challenge/secret_plan.txt
 # add lines to secret
 RANDOM=$$$(date +%s)
 ci=$(/usr/bin/python3 -c "import random; print(random.choice(['a pet shark', 'mrbeast\'s youtube channel', 'a first edition holographic charizard']))")
-LINE="Step3. Use dollerz to buy $ci"
+LINE="Step 3. Use dollerz to buy $ci"
 LINE2="Step 4. Do laundry"
 
 echo $LINE >> /challenge/secret_plan.txt
 echo $LINE2 >> /challenge/secret_plan.txt
 
-sudo -u hacker steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -p Iluvkittens42!
+steghide embed -ef /challenge/secret_plan.txt -cf /challenge/propoganda.jpg -p Iluvkittens42!
 
-#rm /challenge/secret_plan.txt
+rm /challenge/secret_plan.txt
