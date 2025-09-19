@@ -24,8 +24,66 @@ modules:
   
 - id: pwn-re
   name: PWN/RE
+    challenges:
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: buffer-overflow
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: magic-number
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: reverse-password-plaintext
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: reverse-password-backward
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: reverse-password-cipher
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: icky-input 
 - id: forensics
   name: forensics
+    challenges:
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: grep-master 
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: unlock-the-vault
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: locked-treasure-chest
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: the-artists-clue
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: code-cracker
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: chatty-server
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: secret-message-in-photo
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: hidden-treasures-in-the-picture
 
 type: event
 
