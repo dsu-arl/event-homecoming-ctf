@@ -6,3 +6,6 @@ challenges:
     - id: findthegeneralii
       name: Find the General II
       image: copsahl/forensics
+    - id: ibeenwalkin
+      name: I Been Walkin'
+      image: copsahl/forensics
