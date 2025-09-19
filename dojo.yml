@@ -3,10 +3,30 @@ name: DSU Homecoming CTF
 award:
   emoji: 💻
 modules:
+  - import:
+      dojo: welcome 
+      module: welcome
+  - import:
+      dojo: linux~cf6cc015 
+      module: linux-basics
+  - import:
+      dojo: linux~cf6cc015 
+      module: linux-admin
+  - import:
+      dojo: cyber-security~59368da7
+      module: encoding
+  - import:
+      dojo: cyber-security~59368da7
+      module: osint
+  - import:
+      dojo: cyber-security~59368da7
+      module: web
+  
 - id: pwn-re
   name: PWN/RE
 - id: forensics
   name: forensics
+
 type: event
 
 
