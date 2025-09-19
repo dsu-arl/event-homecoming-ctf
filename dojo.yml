@@ -3,8 +3,88 @@ name: DSU Homecoming CTF
 award:
   emoji: 💻
 modules:
-- id: misc
-  name: misc
-- id: pwn
-  name: pwn
+  - import:
+      dojo: welcome 
+      module: welcome
+  - import:
+      dojo: linux~cf6cc015 
+      module: linux-basics
+  - import:
+      dojo: linux~cf6cc015 
+      module: linux-admin
+  - import:
+      dojo: cyber-security~59368da7
+      module: encoding
+  - import:
+      dojo: cyber-security~59368da7
+      module: osint
+  - import:
+      dojo: cyber-security~59368da7
+      module: web
+  
+- id: pwn-re
+  name: PWN/RE
+    challenges:
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: buffer-overflow
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: magic-number
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: reverse-password-plaintext
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: reverse-password-backward
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: reverse-password-cipher
+      - import:
+          dojo: cyber-security~59368da7
+          module: pwn
+          challenge: icky-input 
+- id: forensics
+  name: forensics
+    challenges:
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: grep-master 
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: unlock-the-vault
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: locked-treasure-chest
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: the-artists-clue
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: code-cracker
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: chatty-server
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: secret-message-in-photo
+      - import:
+          dojo: cyber-security~59368da7
+          module: forensics
+          challenge: hidden-treasures-in-the-picture
+
 type: event
+
+

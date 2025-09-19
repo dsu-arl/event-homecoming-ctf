@@ -1,0 +1,4 @@
+#!/bin/sh
+
+chmod 0700 /challenge/.uni.txt
+chmod 0700 /challenge/.build.txt

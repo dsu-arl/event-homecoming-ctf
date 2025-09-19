@@ -1,0 +1,4 @@
+#!/bin/sh
+
+chmod 0700 /challenge/ans.txt
+chown hacker:hacker /challenge/data.bin

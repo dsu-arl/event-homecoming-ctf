@@ -1,5 +1,0 @@
-name: misc
-challenges:
-- id: creatures
-  name: Creatures
-  allow_privileged: false

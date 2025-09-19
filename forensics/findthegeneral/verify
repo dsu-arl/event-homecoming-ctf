@@ -1,0 +1,36 @@
+#!/usr/bin/exec-suid -- /usr/bin/python3.12 -I
+import re
+import sys
+
+def prGreen(s): print("\033[92m {}\033[00m".format(s))
+def prRed(s): print("\033[91m {}\033[00m".format(s))
+
+def print_flag():
+    try:
+        with open("/flag", "r") as f:
+            print(f.read())
+    except FileNotFoundError:
+        print("Error: Flag file not found.")
+
+def main():
+    uni = input("What institution kidnapped General Cyber? ").lower()
+    with open('/challenge/.uni.txt', 'r') as fObj:
+        UNI_ANS = [x.strip() for x in fObj.readlines()]
+    if uni not in UNI_ANS:
+        prRed("That is not correct. Make sure to check your spelling.")
+        sys.exit(0)
+
+    building = input("What building is General Cyber in? ").lower()
+    with open('/challenge/.build.txt', 'r') as fObj:
+        BUILDING_ANS = [x.strip() for x in fObj.readlines()]
+    if building not in BUILDING_ANS:
+        prRed("That is not correct. Make sure to check your spelling.")
+        sys.exit(0)
+
+    prGreen("That's correct! Congratulations!")
+    print_flag()
+
+
+if __name__ == "__main__":
+
+    main()
