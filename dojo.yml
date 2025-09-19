@@ -5,8 +5,8 @@ award:
 modules:
 - id: misc
   name: misc
-- id: pwn
-  name: pwn
+- id: pwn-re
+  name: PWN/RE
 - id: forensics
   name: forensics
 type: event

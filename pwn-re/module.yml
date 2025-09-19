@@ -1,5 +1,8 @@
-name: misc
+name: pwn
 challenges:
 - id: creatures
   name: Creatures
+  allow_privileged: false
+- id: mailroom
+  name: mailroom
   allow_privileged: false
