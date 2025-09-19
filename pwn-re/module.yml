@@ -6,3 +6,6 @@ challenges:
 - id: mailroom
   name: mailroom
   allow_privileged: false
+- id: dsu-vm
+  name: dsu-vm
+  allow_privileged: false
