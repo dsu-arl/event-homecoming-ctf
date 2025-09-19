@@ -84,10 +84,10 @@ modules:
           dojo: cyber-security~59368da7
           module: forensics
           challenge: hidden-treasures-in-the-picture
-- id: pwn-re
-  name: PWN/RE Part 2
-- id: forensics
-  name: Forensics Part 1
+  - id: pwn-re
+    name: PWN/RE Part 2
+  - id: forensics
+    name: Forensics Part 1
 type: event
 
 
