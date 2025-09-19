@@ -22,8 +22,8 @@ modules:
       dojo: cyber-security~59368da7
       module: web
   
-  - id: pwn-re
-    name: PWN/RE
+  - id: pwn-re-1
+    name: PWN/RE Part 1
     challenges:
       - import:
           dojo: cyber-security~59368da7
@@ -49,8 +49,8 @@ modules:
           dojo: cyber-security~59368da7
           module: pwn
           challenge: icky-input 
-  - id: forensics
-    name: forensics
+  - id: forensics-2
+    name: Forensics Part 2
     challenges:
       - import:
           dojo: cyber-security~59368da7
@@ -84,7 +84,10 @@ modules:
           dojo: cyber-security~59368da7
           module: forensics
           challenge: hidden-treasures-in-the-picture
-
+- id: pwn-re
+  name: PWN/RE Part 2
+- id: forensics
+  name: Forensics Part 1
 type: event
 
 
