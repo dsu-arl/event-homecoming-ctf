@@ -3,8 +3,6 @@ name: DSU Homecoming CTF
 award:
   emoji: 💻
 modules:
-- id: misc
-  name: misc
 - id: pwn-re
   name: PWN/RE
 - id: forensics
