@@ -5,7 +5,7 @@ challenges:
   allow_privileged: false
 - id: mailroom
   name: mailroom
-  allow_privileged: false
+  allow_privileged: true
 - id: dsu-vm
   name: dsu-vm
-  allow_privileged: false
+  allow_privileged: true
